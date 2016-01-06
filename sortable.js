@@ -197,7 +197,7 @@ $(function () {
         
         if(typeof(sinkLi) === "undefined" )
         {
-            alert('נא לבחור פריט שעליו תתבצע הפעולה.');
+            alert('Please choose a list item to work with.');
         }
         else
         {
