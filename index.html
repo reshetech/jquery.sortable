@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0">
     <meta charset="UTF-8">
     <title>jQuery sortable</title>
-    
+
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" charset="UTF-8"></script>        
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" charset="UTF-8"></script>
 </head>
 <body>
 
@@ -17,41 +17,8 @@
 <article class='couple-wrapper'>
 <div class="row">
 <div class="col-md-6">
-<form action="#" method="post" role="form" class="well">
-  <fieldset>
-  <div class="form-group">
-    <div class="col-md-12">
-        <legend>My choice of animals</legend>
-        <ul class="list-group checked-list-box sink" style="-webkit-padding-start:0">
-          <li class="list-group-item" data-id="0">&nbsp;</li>
-          <li class="list-group-item" data-id="0">&nbsp;</li>
-          <li class="list-group-item" data-id="0">&nbsp;</li>
-          <li class="list-group-item" data-id="0">&nbsp;</li>
-        </ul> 
-        <div class="alignCenter">
-        <button class="btn btn-default glyph-wrapper activeBtns" data-action="up">
-          <span class="glyphicon glyphicon-arrow-up"></span>
-        </button>
-        <button class="btn btn-default glyph-wrapper activeBtns" data-action="down">
-          <span class="glyphicon glyphicon-arrow-down"></span>
-        </button>
-        <button class="btn btn-default glyph-wrapper activeBtns" data-action="remove">
-          <span class="glyphicon glyphicon-arrow-left"></span>
-        </button>
-        </div>        
-        <input name="data-collector" type="hidden" class="data-collector" value="">
-    </div>
-  </div>
-  <div class="form-group">
-      <div class="col-md-12 alignLeft">
-        <input type="submit" name="submit[main]" value="submit" class="btn btn-primary">
-      </div>
-  </div>
-  </fieldset>  
-</form>
-</div>
-<div class="col-md-6">
-<div class="well" style="max-height:240px;overflow: auto;">
+<div class="well" style="max-height:340px;overflow: auto;">
+<legend>The list to choose from</legend>
 <ul class="list-group checked-list-box source">
     <li class="list-group-item" data-id="1">
       <span class="state-icon glyphicon glyphicon-unchecked"></span>
@@ -65,9 +32,63 @@
       <span class="state-icon glyphicon glyphicon-unchecked"></span>
       cow<input type="checkbox" class="hidden checkbox">
     </li>
+    <li class="list-group-item" data-id="3">
+      <span class="state-icon glyphicon glyphicon-unchecked"></span>
+      sheep<input type="checkbox" class="hidden checkbox">
+    </li>
+    <li class="list-group-item" data-id="3">
+      <span class="state-icon glyphicon glyphicon-unchecked"></span>
+      camel<input type="checkbox" class="hidden checkbox">
+    </li>
+    <li class="list-group-item" data-id="3">
+      <span class="state-icon glyphicon glyphicon-unchecked"></span>
+      zebra<input type="checkbox" class="hidden checkbox">
+    </li>
+    <li class="list-group-item" data-id="3">
+      <span class="state-icon glyphicon glyphicon-unchecked"></span>
+      monkey<input type="checkbox" class="hidden checkbox">
+    </li>
 </ul>
-</div>   
 </div>
+</div>
+
+<div class="col-md-6">
+<form action="#" method="post" role="form" class="well">
+  <fieldset>
+  <div class="form-group">
+    <div class="col-md-12">
+        <legend>My chosen animals</legend>
+        <ul class="list-group checked-list-box sink" style="-webkit-padding-start:0">
+          <li class="list-group-item" data-id="0">&nbsp;</li>
+          <li class="list-group-item" data-id="0">&nbsp;</li>
+          <li class="list-group-item" data-id="0">&nbsp;</li>
+          <li class="list-group-item" data-id="0">&nbsp;</li>
+        </ul>
+        <div class="text-center">
+
+        <button class="btn btn-default glyph-wrapper activeBtns" data-action="remove">
+          <span class="glyphicon glyphicon-arrow-left"></span>
+        </button>
+        <button class="btn btn-default glyph-wrapper activeBtns" data-action="up">
+          <span class="glyphicon glyphicon-arrow-up"></span>
+        </button>
+        <button class="btn btn-default glyph-wrapper activeBtns" data-action="down">
+          <span class="glyphicon glyphicon-arrow-down"></span>
+        </button>
+
+        </div>
+        <input name="data-collector" type="hidden" class="data-collector" value="">
+    </div>
+  </div>
+  <div class="form-group">
+      <div class="col-md-12 text-right">
+        <input type="submit" name="submit[animals]" value="submit" class="btn btn-primary">
+      </div>
+  </div>
+  </fieldset>
+</form>
+</div>
+
 </div>
 </article>
 
@@ -75,9 +96,10 @@
 </div><!--/.container-->
 
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" charset="utf-8"></script>
-<script src="/assets/js/sortable.js" charset="utf-8"></script>
+<script src="sortable.js" charset="utf-8"></script>
 
 
 
 </body>
 </html>
+
